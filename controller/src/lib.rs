@@ -11,10 +11,13 @@
 //!
 //! - [`deployment`] — StellarNode deployment pipeline, including the
 //!   [`deployment::optimizer`] WASM bytecode optimizer.
+//! - [`maintenance`] — Background maintenance tasks, including the
+//!   [`maintenance::pruner`] History Archive Pruning Daemon (#242).
 //! - [`quorum`] — Quorum-set graph analysis utilities.
 //! - [`webhook`] — Admission webhook handlers, including the
 //!   [`webhook::wasm_mutator`] MutatingAdmissionWebhook for WASM optimization.
 
 pub mod deployment;
+pub mod maintenance;
 pub mod quorum;
 pub mod webhook;
